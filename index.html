@@ -1,74 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product list with cart</title>
 
-  Desserts
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="branding">Desserts</h1>
+    </header>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+    <main class="container">
+      <section class="container__products">
+        <h2 class="visually-hidden">Available Desserts</h2>
+        <article class="product">
+          <img src="./assets/images/image-1.jpg" alt="Waffle with Berries" />
+          <h3 class="product__name">Waffle with Berries</h3>
+          <p class="product__type">Waffle</p>
+          <p class="product__price">$6.50</p>
+          <button class="product__add-to-cart">Add to Cart</button>
+        </article>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+        <article class="product">
+          <img
+            src="./assets/images/image-2.jpg"
+            alt="Vanilla Bean Crème Brûlée"
+          />
+          <h3 class="product__name">Vanilla Bean Crème Brûlée</h3>
+          <p class="product__type">Crème Brûlée</p>
+          <p class="product__price">$7.00</p>
+          <button class="product__add-to-cart">Add to Cart</button>
+        </article>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+        <article class="product">
+          <img src="./assets/images/image-3.jpg" alt="Macaron Mix of Five" />
+          <h3 class="product__name">Macaron Mix of Five</h3>
+          <p class="product__type">Macaron</p>
+          <p class="product__price">$8.00</p>
+          <button class="product__add-to-cart">Add to Cart</button>
+        </article>
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+        <article class="product">
+          <img src="./assets/images/image-4.jpg" alt="Classic Tiramisu" />
+          <h3 class="product__name">Classic Tiramisu</h3>
+          <p class="product__type">Tiramisu</p>
+          <p class="product__price">$5.50</p>
+          <button class="product__add-to-cart">Add to Cart</button>
+        </article>
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
+        <article class="product">
+          <img src="./assets/images/image-5.jpg" alt="Pistachio Baklava" />
+          <h3 class="product__name">Pistachio Baklava</h3>
+          <p class="product__type">Baklava</p>
+          <p class="product__price">$4.00</p>
+          <button class="product__add-to-cart">Add to Cart</button>
+        </article>
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
+        <article class="product">
+          <img src="./assets/images/image-6.jpg" alt="Lemon Meringue Pie" />
+          <h3 class="product__name">Lemon Meringue Pie</h3>
+          <p class="product__type">Pie</p>
+          <p class="product__price">$6.00</p>
+          <button class="product__add-to-cart">Add to Cart</button>
+        </article>
+      </section>
 
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
+      <aside class="container__cart" role="complementary" aria-label="Shopping Cart">
+        <h2 class="cart__title">Your Cart</h2>
+        <div class="cart__content">
+          <p class="cart__empty">Your cart is empty.</p>
+          <ul class="cart__items" role="list" aria-label="Cart items">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <div class="cart__summary">
+            <div class="cart__total" role="status" aria-live="polite">
+              <span>Total</span>
+              <span class="cart__total-price">$0.00</span>
+            </div>
+            <button class="cart__checkout" disabled>Checkout</button>
+          </div>
+        </div>
+      </aside>
+    </main>
 
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
