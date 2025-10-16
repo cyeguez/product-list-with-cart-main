@@ -47,9 +47,13 @@
       <section class="container__products">
         <h2 class="visually-hidden">Available Desserts</h2>
         <article class="product">
-          <img src="./assets/images/image-1.jpg" alt="Waffle with Berries" />
-          <h3 class="product__name">Waffle with Berries</h3>
+          <img
+            src="./assets/images/image-macaron-mobile.jpg"
+            alt="Waffle with Berries"
+            class="image-product"
+          />
           <p class="product__type">Waffle</p>
+          <h3 class="product__name">Waffle with Berries</h3>
           <p class="product__price">$6.50</p>
           <button class="product__add-to-cart">Add to Cart</button>
         </article>
@@ -98,26 +102,10 @@
         </article>
       </section>
 
-      <aside
-        class="container__cart"
-        role="complementary"
-        aria-label="Shopping Cart"
-      >
-        <h2 class="cart__title">Your Cart</h2>
-        <div class="cart__content">
-          <p class="cart__empty">Your cart is empty.</p>
-          <ul class="cart__items" role="list" aria-label="Cart items">
-            <!-- Cart items will be dynamically added here -->
-          </ul>
-          <div class="cart__summary">
-            <div class="cart__total" role="status" aria-live="polite">
-              <span>Total</span>
-              <span class="cart__total-price">$0.00</span>
-            </div>
-            <button class="cart__checkout" disabled>Checkout</button>
-          </div>
-        </div>
-      </aside>
+      <section class="container__cart">
+        <h2 class="cart__title">Your Cart(0)</h2>
+        <p class="cart__message">Your added items will appear here</p>
+      </section>
     </main>
 
     <footer class="attribution">
