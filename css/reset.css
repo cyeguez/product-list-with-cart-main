@@ -133,17 +133,6 @@ body {
   min-height: 100vh;
   font-size: 100%;
   
-  color: var(--negro);
-  /* opcional */
-  line-height: 1.4em;
-  /* opcional */
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-  /* opcional */
-  font-smooth: always;
-  /* opcional */
-  -webkit-font-smoothing: antialiased;
-  /* opcional */
-  -moz-osx-font-smoothing: grayscale;
+  
+  
 }
