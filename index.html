@@ -11,8 +11,6 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Frontend Mentor | Product list with cart</title>
 
@@ -25,40 +23,48 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-      }
     </style>
   </head>
   <body>
-    <main class="container">
-      <header>
-        <h1 class="branding">Desserts</h1>
-      </header>
-      <section class="container__products">
-        <h2 class="visually-hidden">Available Desserts</h2>
-      </section>
+    <section class="container-general">
+      <div class="container">
+        <h1 class="title">Desserts</h1>
 
-      <section class="container__cart">
-        <h2 class="cart__title">Your Cart(0)</h2>
-        <p class="cart__message">Your added items will appear here</p>
-      </section>
-    </main>
+        <section class="container__products">
+          <picture class="container__products__image">
+            <source srcset="#" media="(min-width:1024)" />
+            <source srcset="#" media="(min-width: 600px)" />
+            <img src="#" alt="#" class="responsive-image" />
+          </picture>
+          <button class="container__products__add-to">
+            <img
+              src="./assets/images/icon-add-to-cart.svg"
+              alt="Cart"
+              class="add-to__image"
+            />
+            <span class="add-to__text">Add to Cart</span>
+          </button>
+          <div class="container__products__descripcion">
+            <span class="descripcion__category">Wafle</span>
+            <span class="descripcion__name">Wafle witn Berries</span>
+            <span class="descripcion__price">$6.50</span>
+          </div>
+        </section>
+        <aside class="container__cart">
+          <h2 class="container__cart__title">Your cart(0)</h2>
+          <p class="container__cart__mesagge">
+            Your added items will appear here
+          </p>
+
+        </aside>
+      </div>
+    </section>
+   
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </footer>
-
-    <script src="./js/scrip.js"></script>
   </body>
 </html>
