@@ -45,4 +45,111 @@
   --rose-900: hsl(14, 65%, 9%);
 
   --radius-1: 10px;
+  --radius-2: 20px;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--rose-50);
+}
+
+.container-general {
+  max-width: 90rem;
+  padding-inline: 1.5rem;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 600px) {
+  .container-general {
+    margin: 97px auto;
+    padding-inline: 7rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--rose-900);
+  padding-top: 2rem;
+}
+
+.container {
+  margin-top: 2.5rem;
+}
+.container__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container__products__image {
+  width: 100%;
+  height: 13.25rem;
+  border-radius: var(--radius-1);
+  overflow: hidden;
+}
+
+.product__item__add-to {
+  width: 10rem;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--radius-2);
+  border: 1px solid var(--rose-900);
+}
+.add-to__image {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+.add-to__text {
+  font-weight: var(--font-weight-semibold);
+}
+.product__item__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+.description__category {
+  color: var(--rose-400);
+  font-weight: var(--font-weight-regular);
+}
+.description__name {
+  color: var(--rose-900);
+  font-weight: var(--font-weight-bold);
+}
+.description__price {
+  color: var(--red);
+  font-weight: var(--font-weight-bold);
+}
+.container__cart {
+  width: 100%;
+  max-width: 385px;
+  height: 18.75rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-image: url(../assets/images/illustration-empty-cart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--white);
+  border-radius: var(--radius-1);
+  margin-bottom: 2rem;
+  border: 1px solid orange;
+  position: relative;
+}
+.container__cart__title {
+  color: var(--red);
+  font-weight: var(--font-weight-bold);
+}
+.container__cart__mesagge {
+  position: absolute;
+  top: 80%;
+  color: var(--rose-500);
+  font-weight: var(--font-weight-semibold);
+}
+.attribution {
 }

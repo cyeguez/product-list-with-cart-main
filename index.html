@@ -12,6 +12,9 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Frontend Mentor | Product list with cart</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,44 +30,45 @@
   </head>
   <body>
     <section class="container-general">
+      <h1 class="title">Desserts</h1>
       <div class="container">
-        <h1 class="title">Desserts</h1>
-
-        <section class="container__products">
-          <picture class="container__products__image">
-            <source srcset="#" media="(min-width:1024)" />
-            <source srcset="#" media="(min-width: 600px)" />
-            <img src="#" alt="#" class="responsive-image" />
-          </picture>
-          <button class="container__products__add-to">
-            <img
-              src="./assets/images/icon-add-to-cart.svg"
-              alt="Cart"
-              class="add-to__image"
-            />
-            <span class="add-to__text">Add to Cart</span>
-          </button>
-          <div class="container__products__descripcion">
-            <span class="descripcion__category">Wafle</span>
-            <span class="descripcion__name">Wafle witn Berries</span>
-            <span class="descripcion__price">$6.50</span>
-          </div>
+        <section class="products">
+          <article class="product__item">
+            <picture class="product__item__image">
+              <source srcset="#" media="(min-width:1024)" />
+              <source srcset="#" media="(min-width: 600px)" />
+              <img src="#" alt="#" class="responsive-image" />
+            </picture>
+            <button class="product__item__add-to">
+              <img
+                src="./assets/images/icon-add-to-cart.svg"
+                alt="Cart"
+                class="add-to__image"
+              />
+              <span class="add-to__text">Add to Cart</span>
+            </button>
+            <div class="product__item__description">
+              <span class="description__category">Wafle</span>
+              <span class="description__name">Wafle witn Berries</span>
+              <span class="description__price">$6.50</span>
+            </div>
+          </article>
         </section>
+
         <aside class="container__cart">
           <h2 class="container__cart__title">Your cart(0)</h2>
           <p class="container__cart__mesagge">
             Your added items will appear here
           </p>
-
         </aside>
       </div>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </footer>
     </section>
-   
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
+    <script src="./js/scrip.js"></script>
   </body>
 </html>
